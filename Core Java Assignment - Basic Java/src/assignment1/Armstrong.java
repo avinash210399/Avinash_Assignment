@@ -1,29 +1,26 @@
 package assignment1;
 
 import java.util.Scanner;
+public class Armstrong {
 
-class Armstrong {
-    public boolean armstrongCheck(int num) {
-        int sum=0,arm = num;
-        while(num>0) {
-            int temp = num%10;
-            sum+=temp*temp*temp;
-            num = num/10;
-        };
-        if(sum == arm) {
-            return true;
-        }
-        return false;
-    }
-}
-
- class AssignmentQ1 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num = scan.nextInt();
-        Armstrong check = new Armstrong();
-        boolean res = check.armstrongCheck(num);
-        System.out.println(res);
-        scan.close();
+
+        int num, number, temp, total = 0;
+        System.out.println("Enter 3 Digit Number");
+        Scanner scanner = new Scanner(System.in);
+        num = scanner.nextInt();
+        scanner.close();
+        number = num;
+
+        for( ;number!=0;number /= 10)
+        {
+            temp = number % 10;
+            total = total + temp*temp*temp;
+        }
+
+        if(total == num)
+            System.out.println(num + " is an Armstrong number");
+        else
+            System.out.println(num + " is not an Armstrong number");
     }
 }
