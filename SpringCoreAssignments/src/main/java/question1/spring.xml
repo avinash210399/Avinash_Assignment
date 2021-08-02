@@ -2,14 +2,14 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 
 <beans>
-	<bean id="customer" class="assignment1.Customer" >
+	<bean id="customer" class="assignment1.question1.Customer" >
 		<constructor-arg value="101" />
 		<constructor-arg value="Avinash Kumar" />
 		<constructor-arg value="123456" />
 	    <constructor-arg ref="address" />	
 	</bean>
 	
-	<bean id="address" class="assignment1.Address">
+	<bean id="address" class="assignment1.question1.Address">
 		<constructor-arg value="New Street" />
 		<constructor-arg value="Dhanbad" />
 		<constructor-arg value="Jharkhand" />
