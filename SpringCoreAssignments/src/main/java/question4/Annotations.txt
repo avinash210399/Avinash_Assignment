@@ -1,0 +1,6 @@
+@Component, @Repository, @Service, @Controller Annotations Introduction.
+@Component: This is the base annotation, it is used to annotate other annotations such as @Repository, @Service, @Controller. If a java class or interface is annotated by @Component means this class or interface is a Spring-managed bean.
+@Repository: This is used to annotate a special type of bean, such as Data Access Object (DAO). Annotated with @Repository, the Spring framework will treat it as a DAO bean to implement database operations.
+@Service: If your bean provides a service function for example business logic method, then you can use @Service to annotate it. Generally, you will invoke the DAO beans method in the @Service bean method.
+@Controller: This annotates a class as a controller bean. A controller usually handles client requests, check which service bean can handle the requests. then it will pass client request data to the service object to process. This is usually used in Spring MVC.
+ For example, @Controller("requestConroller") annotated the beans with the id requestController. Then you can use the code ApplicationContext.getBean("requestConroller") to retrieve the controller bean.
