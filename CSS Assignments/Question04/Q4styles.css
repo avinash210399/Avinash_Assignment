@@ -1,0 +1,15 @@
+body {
+    background-color: aquamarine;
+}
+
+.a1:link {
+    color: green;
+}
+
+.a1:visited {
+    color: red;
+}
+
+.a1:hover {
+    color: blue;
+}

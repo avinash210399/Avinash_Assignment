@@ -1,0 +1,10 @@
+span {
+    font-weight: bold;
+}
+
+p {
+    border: 1px solid red;
+    border-spacing: 10px;
+    outline: 3px dotted green;
+    font-size: 25px;
+}
