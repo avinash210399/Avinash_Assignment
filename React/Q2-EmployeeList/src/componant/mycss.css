@@ -1,0 +1,19 @@
+.csstable{
+    column-count: auto;
+   
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    
+
+  }    
+.a{
+    text-align:left;
+    border-bottom: 1pt solid black;
+  
+}
+tr,td,th{
+    padding: 10px;
+}

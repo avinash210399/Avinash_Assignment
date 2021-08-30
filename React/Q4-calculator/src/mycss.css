@@ -1,0 +1,15 @@
+button ,.result{
+    padding:2% ;
+    margin: 5px;
+    background-color:paleturquoise;
+    border:steelblue solid ;
+    font-size: xx-large;
+}
+div{
+    border:steelblue solid ;
+    margin-right: 0;
+}
+.button{
+    margin: 0 auto;
+
+}
